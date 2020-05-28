@@ -1,24 +1,24 @@
 ---
 # tasks file for echo
 
-- name: echo FQDN
+- name: myrole03 FQDN
   command: hostname -f
   register: out
 
-- name: echo FQDN
+- name: myrole03 FQDN
   debug: var=out.stdout
 
-- name: echo IP address
+- name: myrole03 IP address
   command: hostname -I
   register: out
 
-- name: echo IP address
+- name: myrole03 IP address
   debug: var=out.stdout
 
-- name: echo date
+- name: myrole03 date
   command: date
   register: out
 
-- name: echo date
+- name: myrole03 date
   debug: var=out.stdout
 
