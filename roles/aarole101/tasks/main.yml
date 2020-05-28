@@ -1,24 +1,24 @@
 ---
-# tasks file for list
+# tasks file for aarole
 
-- name: list FQDN
+- name: aarole FQDN
   command: hostname -f
   register: out
 
-- name: list FQDN
+- name: aarole FQDN
   debug: var=out.stdout
 
-- name: list IP address
+- name: aarole IP address
   command: hostname -I
   register: out
 
-- name: list IP address
+- name: aarole IP address
   debug: var=out.stdout
 
-- name: list date
+- name: aarole date
   command: date
   register: out
 
-- name: list date
+- name: aarole date
   debug: var=out.stdout
 
