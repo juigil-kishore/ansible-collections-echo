@@ -1,0 +1,11 @@
+---
+# tasks file for myrole01
+
+- name: myrole01 FQDN
+  command: hostname -f
+  register: out
+
+- name: myrole01 FQDN
+  debug: var=out.stdout
+
+

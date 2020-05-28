@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-echo
+# tasks file for echo
 
 - name: echo FQDN
   command: hostname -f
