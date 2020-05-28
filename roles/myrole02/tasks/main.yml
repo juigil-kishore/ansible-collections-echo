@@ -1,11 +1,17 @@
 ---
 # tasks file for myrole02
 
-- name: myrole02 FQDN
-  command: hostname -f
+- name: myrole02 ID
+  command: id
   register: out
 
-- name: myrole02 FQDN
+- name: myrole02 ID
   debug: var=out.stdout
 
+- name: myrole02 python script
+  script: myrole02.py
+  register: out
+
+- name: myrole02 python script
+  debug: var=out.stdout
 
