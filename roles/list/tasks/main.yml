@@ -1,0 +1,24 @@
+---
+# tasks file for ansible-role-echo
+
+- name: list FQDN
+  command: hostname -f
+  register: out
+
+- name: list FQDN
+  debug: var=out.stdout
+
+- name: list IP address
+  command: hostname -I
+  register: out
+
+- name: list IP address
+  debug: var=out.stdout
+
+- name: list date
+  command: date
+  register: out
+
+- name: list date
+  debug: var=out.stdout
+
